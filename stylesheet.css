@@ -1,0 +1,71 @@
+* {
+    margin: 0; /* Removes default margin for all elements */
+    padding: 0; /* Removes default padding for all elements */
+}
+/* Make the background dark */
+html, body {
+    background-color: #edecd8; /* Light background color */
+    height: 100%; /* Ensures the body covers the full viewport height */
+}
+/* Settings for the container */
+.container {
+    display: flex; /* Uses Flexbox for layout */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    height: 100vh; /* Full viewport height */
+    gap: 24px; /* Space between cards */
+}
+.card {
+    background-color: #1e1e2f; /* Card background color */
+    width: 600px; /* Card width */
+    height: 600px; /* Card height */
+    border-radius: 8px; /* Rounded corners */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; /* Centers items vertically */
+    align-items: center; /* Centers items horizontally */
+    gap: 24px; /* Space between card elements */
+}
+.pieLogo {
+    width: 350px; /* Image width */
+    height: 350px; /* Image height */
+    object-fit: contain; /* Keeps image aspect ratio */
+    transition: transform 0.3s ease; /* Smooth rotation on hover */
+}
+.pieLogo:hover {
+    transform: rotateZ(10deg); /* Rotates the logo on hover */
+}
+.fronInfo {
+    display: flex; /* Flexbox for layout */
+    flex-direction: row; /* Aligns items in a row */
+    justify-content: space-around; /* Distributes items with equal spacing */
+    align-items: center; /* Aligns items vertically */
+    gap: 24px; /* Space between elements */
+}
+.horizantal-line {
+    width: 400px; /* Line width */
+    height: 1px; /* Line thickness */
+    background-color: #ffffff; /* Line color */
+    margin: 0 auto; /* Centers the line horizontally */
+}
+.message {
+    padding: 32px; /* Adds padding around the message */
+}
+.listContent {
+    padding: 0px 54px; /* Adds horizontal padding */
+    display: flex; /* Uses Flexbox for layout */
+    flex-direction: column; /* Stacks list items vertically */
+    justify-content: flex-start; /* Aligns items at the top */
+    text-align: left; /* Aligns text to the left */
+}
+/* Responsive design for smaller screens */
+@media (max-width: 999px) {
+    .container {
+        display: flex; /* Uses Flexbox for layout */
+        flex-direction: column; /* Stacks items vertically */
+        justify-content: center; /* Centers items vertically */
+        align-items: center; /* Centers items horizontally */
+        text-align: center; /* Centers text */
+        height: fit-content; /* Adjusts height based on content */
+    }
+}
